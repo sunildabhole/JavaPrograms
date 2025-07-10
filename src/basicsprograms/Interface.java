@@ -1,28 +1,25 @@
 package basicsprograms;
-interface Amazon
-{
+
+interface Amazon {
 	void add();
 }
-interface Flipcart
-{
+
+interface Flipcart {
 	void subtract();
 }
-public class Interface implements Amazon,Flipcart
-{
-	public static void main(String [] args)
-	{
-		Interface i=new Interface();
+
+public class Interface implements Amazon, Flipcart {
+	public static void main(String[] args) {
+		Interface i = new Interface();
 		i.subtract();
 		i.add();
 	}
 
-	public void subtract() 
-	{
+	public void subtract() {
 		System.out.println("sub");
 	}
 
-	public void add()
-	{
+	public void add() {
 		System.out.println("add");
 	}
 }
